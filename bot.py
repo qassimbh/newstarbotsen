@@ -116,7 +116,7 @@ def set_webhook():
     إذا قمت بتعيين متغير البيئة RENDER_EXTERNAL_URL إلى رابط الخدمة (مثلاً
     https://your-service.onrender.com) سيتم تسجيل webhook تلقائياً.
     """
-    external_url = os.environ.get("RENDER_EXTERNAL_URL")  # ضع رابط الخدمة هنا في إعدادات Render
+    external_url = os.environ.get("https://newstarbotsen.onrender.com")  # ضع رابط الخدمة هنا في إعدادات Render
     if external_url:
         webhook_url = f"{external_url}/webhook/{TELEGRAM_TOKEN}"
         logger.info("Setting webhook to %s", webhook_url)
